@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="cordefundo">
+        <h1>Calculadora</h1>
+        <div class="coco">
+            <main>
+                <input type="number" name="txtn1" id="txtn1" placeholder="Primeiro valor"> <div id="sinal"><strong>+</strong></div>
+                <input type="number" name="txtn2" id="txtn2" placeholder="Segundo valor">
+            </main>
+           <div id="resul" class="resultado"><strong>Resultado</strong></div>
+        </div>
+        <div class="cocoo">
+            <button type="submit" onclick="subtrair()">SUBTRAÇÃO</button>
+            <button type="submit" onclick="Somar()">SOMA</button>
+            <button type="submit" onclick="dividir()">DIVISÃO</button>
+            <button type="submit" onclick="multiplicar()">MULTIPLICAÇÃO</button>
+            <button type="submit" onclick="exponenciar()">EXPONENCIAÇÃO</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

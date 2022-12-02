@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de box model</title>
+    <style>
+        *{
+            text-decoration: none;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        h1{
+            text-align: center;
+        }
+        a{
+            color: red;
+            font-weight: bolder;
+        }
+        a:hover{
+            color: green;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        a::after{
+            content: ' [link]';
+        }
+
+        div#caixa0{
+            width: 800px;
+            height: 900px;
+            background-color: gray;
+        }
+        div{
+            margin: 5px;
+        }
+
+        div#dentro0{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            display: inline;
+        }
+
+        div#dentro1{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixa box-level</h1>
+    <p>páragrafos assim com h1...h6 são exemplos de box-level, mas os <a href="#">links são exemplos de inline level</a></p>
+    <div id="caixa0">
+        <div id="dentro0"></div>
+        <div id="dentro1"></div>
+        <div id="dentro2"></div>
+    </div>
+</body>
+</html>

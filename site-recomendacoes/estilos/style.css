@@ -1,0 +1,42 @@
+*{
+    font-family: arial;
+    color: white;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.884);
+}
+
+header > strong{
+    font-size: 20pt;
+    text-align: center;
+}
+
+.centralizar{
+    text-align: center;
+    margin-top: 1em;
+}
+.bajo{
+    margin-bottom: 1em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.space{
+    margin-top: 1em;
+}
+
+.caixa{
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 13pt;
+}

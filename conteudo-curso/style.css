@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(101, 54, 122);
+}
+
+*{
+    font-family: arial;
+    color: white;
+    text-decoration: none;
+}
+
+body > div {
+    justify-content: center;
+    width: 100%;
+}
+
+.caixa{
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+p > mark{
+    background-color: green;
+}
+
+.container{
+    margin-top: 2em;
+}
+
+.caixadeconteudo{
+    width: 20em;
+    margin: 0 auto;
+    padding: 2em;
+    display: block;
+    text-align: center;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 10px;
+}
+
+p + div{
+    box-shadow: 0px 0px 5px white;
+    padding: 2em;
+}
