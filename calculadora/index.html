@@ -2,29 +2,41 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="calculadora simples javascript">
+    <meta name="keywords" content="calculadora js, calculadora simples, javascript">
+    <meta name="author" content="SirDnx">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/mais.png" type="image/x-icon">
 </head>
 <body>
-    <div id="cordefundo">
-        <h1>Calculadora</h1>
-        <div class="coco">
-            <main>
-                <input type="number" name="txtn1" id="txtn1" placeholder="Primeiro valor"> <div id="sinal"><strong>+</strong></div>
-                <input type="number" name="txtn2" id="txtn2" placeholder="Segundo valor">
-            </main>
-           <div id="resul" class="resultado"><strong>Resultado</strong></div>
-        </div>
-        <div class="cocoo">
-            <button type="submit" onclick="subtrair()">SUBTRAÇÃO</button>
-            <button type="submit" onclick="Somar()">SOMA</button>
-            <button type="submit" onclick="dividir()">DIVISÃO</button>
-            <button type="submit" onclick="multiplicar()">MULTIPLICAÇÃO</button>
-            <button type="submit" onclick="exponenciar()">EXPONENCIAÇÃO</button>
-        </div>
+    <div id="caixa-principal">  
+        <header>
+            <h1>CALCULADORA</h1>
+        </header>   
+        <main>
+            <div id="caixa-inputs">
+                <input type="number" name="txtn1" id="txtn1" placeholder="Digite o primeiro valor">
+                <div id="sinal">
+                    +
+                </div>
+                <input type="number" name="txtn2" id="txtn2" placeholder="Digite o segundo valor">
+            </div>
+            <div id="resultado">
+                <div id="resultado-view">
+                    <strong id="resultado-texto">Resultado</strong>
+                </div>
+            </div>
+        </main>
+        <footer id="botoes">
+            <input type="submit" value="Subtrair" onclick="subtrair()">
+            <input type="submit" value="Somar" onclick="Somar()">
+            <input type="submit" value="Dividir" onclick="dividir()">
+            <input type="submit" value="Multiplicar" onclick="multiplicar()">
+            <input type="submit" value="Exponenciação" onclick="exponenciar()">
+        </footer>
     </div>
-    <script src="main.js"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
 </body>
 </html>
