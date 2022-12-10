@@ -4,14 +4,25 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
 }
 
 body{
     font-family: Arial;
     font-size: 1.2em;
     background-color: rgba(0, 0, 0, 0.822);
+    display: flex;
+    flex-direction: column;
 }
+
+main{
+    flex: 1 0 auto;
+}
+
 
 header{
     padding: 30px;
@@ -95,7 +106,11 @@ footer{
     font-style: italic;
     height: 30px;
     width: 100%;
-    position: fixed;
-    bottom: 0px;
     background-color: black;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+#copy{
+    padding: 0px;
 }
