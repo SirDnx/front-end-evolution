@@ -1,0 +1,9 @@
+.formularioCriar--input, .formularioEditar--input, .secaoPesquisar--input, .secaoFiltro--selecao{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: .25rem .5rem;
+}
+
+.formularioCriar--input, .formularioEditar--input{
+    margin-right: .3rem;
+}

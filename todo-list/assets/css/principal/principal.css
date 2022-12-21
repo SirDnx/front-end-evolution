@@ -1,0 +1,7 @@
+.principal{
+    border-radius: 10px;
+    background-color: var(--cor2);
+    max-width: 450px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+}

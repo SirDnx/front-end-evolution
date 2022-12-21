@@ -1,0 +1,4 @@
+.formularioCriar, .formularioEditar{
+    border-bottom: 1px solid var(--cor4);
+    padding: 1rem;
+}

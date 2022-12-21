@@ -1,0 +1,32 @@
+.formularioCriar--button, .formularioEditar--button, .formularioEditar--cancelarButton, .secaoPesquisar--button, .secaoOpcoes--button{
+    align-items: center;
+    border: 1px solid var(--cor3);
+    background-color: var(--cor2);
+    border-radius: 5px;
+    color: var(--cor3);
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    padding: .3rem .6rem;
+    transition: .4s;
+}
+
+.formularioCriar--button:hover, .formularioEditar--button:hover, .formularioEditar--cancelarButton:hover, .secaoPesquisar--button:hover, .secaoOpcoes--button:hover{
+    background-color: var(--cor3);
+    color: white;
+}
+
+.formularioCriar--button:hover > i, .formularioEditar--button:hover > i, .formularioEditar--cancelarButton:hover > i, .secaoPesquisar--button:hover > i, .secaoOpcoes--button:hover > i{
+    color: #ffffff;
+}
+
+.formularioCriar--button i, .formularioEditar--button i, .formularioEditar--cancelarButton i, .secaoPesquisar--button i, .secaoOpcoes--button i{
+    color: var(--cor3);
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.formularioEditar--cancelarButton{
+    margin-top: 1rem;
+}

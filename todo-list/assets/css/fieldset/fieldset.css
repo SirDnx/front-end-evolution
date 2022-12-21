@@ -1,0 +1,3 @@
+.formularioCriar--fieldset, .formularioEditar--fieldset{
+    display: flex;
+}

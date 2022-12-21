@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SirDnx">
+    <meta name="description" content="Todo List avançado com JavaScript">
+    <title>To Do List Avançado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="assets/css/geral.css">
+    <link rel="stylesheet" href="assets/css/button/button.css">
+    <link rel="stylesheet" href="assets/css/input/input.css">
+    <link rel="stylesheet" href="assets/css/hide.css">
+    <link rel="stylesheet" href="assets/css/principal/principal.css">
+    <link rel="stylesheet" href="assets/css/principal/principal-titulo.css">
+    <link rel="stylesheet" href="assets/css/forms/forms.css">
+    <link rel="stylesheet" href="assets/css/forms/forms-paragrafos.css">
+    <link rel="stylesheet" href="assets/css/fieldset/fieldset.css">
+    <link rel="stylesheet" href="assets/css/secao-pesquisar/secaoPesquisar.css">
+    <link rel="stylesheet" href="assets/css/secao-pesquisar/secaoPesquisar-subtitulo.css">
+    <link rel="stylesheet" href="assets/css/secao-pesquisar/secaoPesquisar-div.css">
+    <link rel="stylesheet" href="assets/css/secao-pesquisar/secaoPesquisar-formulario.css">
+    <link rel="stylesheet" href="assets/css/secao-pesquisar/secaoPesquisar-input.css">
+    <link rel="stylesheet" href="assets/css/secao-filtro/secaoFiltro.css">
+    <link rel="stylesheet" href="assets/css/secao-filtro/secaoFiltro-selecao.css">
+</head>
+<body>
+    <main class="principal">
+        <h1 class="principal--titulo">todo avançado</h1>
+        <form id="todo-form" class="formularioCriar">
+            <p class="formularioCriar--paragrafo">adicione a sua tarefa:</p>
+            <fieldset class="formularioCriar--fieldset">
+                <input type="text" id="todo-input" class="formularioCriar--input" placeholder="O que você vai fazer?">
+                <button type="submit" class="formularioCriar--button">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </fieldset>
+        </form>
+        <form id="edit-form" class="formularioEditar hide">
+            <p class="formularioEditar--paragrafo">edite sua tarefa:</p>
+            <fieldset class="formularioEditar--fieldset">
+                <input type="text" id="edit-input" class="formularioEditar--input">
+                <button type="submit" class="formularioEditar--button">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </fieldset>
+            <button id="cancel-edit-btn" class="formularioEditar--cancelarButton">Cancelar</button>
+        </form>
+        <section id="toolbar" class="secaoPesquisar">
+            <div id="search" class="secaoPesquisar--div">
+                <h2 class="secaoPesquisar--subtitulo">pesquisar:</h4>
+                <form class="secaoPesquisar--formulario">
+                    <input type="text" id="search-input" placeholder="Buscar" class="secaoPesquisar--input">
+                    <button id="erase-button" class="secaoPesquisar--button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <section id="filter" class="secaoFiltro">
+                <h2 class="secaoFiltro--subtitulo">Filtrar:</h2>
+                <select id="filter-select" class="secaoFiltro--selecao">
+                    <option value="#" selected disabled class="secaoFiltro--opcao">Selecione uma opção</option>
+                    <option value="all" class="secaoFiltro--opcao">todos</option>
+                    <option value="done" class="secaoFiltro--opcao">feitos</option>
+                    <option value="todo" class="secaoFiltro--opcao">a fazer</option>
+                </select>
+            </section>
+        </section>
+        <section id="todo-list" class="secaoOpcoes">
+            <div class="secaoOpcoes--div todo">
+                <h2 class="secaoOpcoes--subtitulo">Estudar JavaScript</h2>
+                <button class="finish--todo secaoOpcoes--button">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit--todo secaoOpcoes--button">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove--todo secaoOpcoes--button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
