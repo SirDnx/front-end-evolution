@@ -1,0 +1,13 @@
+.secaoOpcoes--div{
+    align-items: center;
+    border-bottom: 1px solid var(--cor5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.secaoOpcoes--div__done{
+    background-color: var(--cor6);
+}

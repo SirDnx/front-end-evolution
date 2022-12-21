@@ -1,0 +1,10 @@
+.secaoOpcoes--subtitulo{
+    font-size: .9rem;
+    flex: 1;   
+}
+
+.secaoOpcoes--div__done .secaoOpcoes--subtitulo{
+    color: #fff;
+    font-style: italic;
+    text-decoration: line-through;
+}

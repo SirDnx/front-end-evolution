@@ -4,6 +4,7 @@
     --cor3: #102f5e;
     --cor4: #ccc;
     --cor5: #ddd;
+    --cor6: #395169;
 }
 
 *{
@@ -21,7 +22,5 @@
 body{
     background-image: url("../img/bg-todo-list.jpg");
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
