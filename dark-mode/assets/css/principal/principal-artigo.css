@@ -1,0 +1,9 @@
+.principal__artigo--imagem{
+    background-color: var(--cinza-claro2);
+    position: relative;
+}
+
+.principal__artigo{
+    padding: 2rem;
+    width: 50%;
+}

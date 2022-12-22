@@ -1,0 +1,11 @@
+.principal__paragrafo--maiuscula{
+    color: var(--cinza-escuro);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.principal__paragrafo--espacamento{
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}

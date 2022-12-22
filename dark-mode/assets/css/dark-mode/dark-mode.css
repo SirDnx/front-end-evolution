@@ -1,0 +1,47 @@
+html, body{
+    background-color: var(--cinza-claro);
+    height: 100%;
+    transition: .3s all ease-in-out;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.dark,
+.dark header{
+    background-color: var(--dark-mode);
+    color: var(--branco);
+}
+
+.dark .bi-sun{
+    display: none;
+}
+
+.dark .bi-moon{
+    display: block;
+}
+
+.dark .principal-secao{
+    background-color: var(--dark-mode2);
+}
+
+.dark .principal__artigo--imagem{
+    background-color: var(--dark-mode3);
+}
+
+.dark .principal__paragrafo--maiuscula{
+    color: var(--dark-mode-descricao);
+}
+
+.dark .principal__paragrafo--espacamento{
+    color: var(--dark-mode-descricao2);
+}
+
+.dark .div-preco__button{
+    background-color: var(--dark-mode-descricao);
+}
+
+.dark .div-preco__button:hover{
+    background-color: var(--dark-mode-descricao2);
+}

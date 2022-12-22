@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK MODE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/geral.css">  
+    <link rel="stylesheet" href="assets/css/cabecalho/cabecalho.css"> 
+    <link rel="stylesheet" href="assets/css/cabecalho/cabecalho-titulo.css">
+    <link rel="stylesheet" href="assets/css/cabecalho/cabecalho-icone.css">
+    <link rel="stylesheet" href="assets/css/principal/principal.css">
+    <link rel="stylesheet" href="assets/css/principal/principal-secao.css">
+    <link rel="stylesheet" href="assets/css/principal/principal-artigo.css">
+    <link rel="stylesheet" href="assets/css/principal/principal-imagem.css">
+    <link rel="stylesheet" href="assets/css/principal/principal-span.css">
+    <link rel="stylesheet" href="assets/css/principal/principal-titulo-principal.css">
+    <link rel="stylesheet" href="assets/css/principal/principal-paragrafo.css">
+    <link rel="stylesheet" href="assets/css/div-preco/div-preco.css">
+    <link rel="stylesheet" href="assets/css/div-preco/div-preco-span.css">
+    <link rel="stylesheet" href="assets/css/div-preco/div-preco-button.css">
+    <link rel="stylesheet" href="assets/css/dark-mode/dark-mode.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2 class="cabecalho__titulo">light and dark</h2>
+        <section class="cabecalho-icones">
+            <input type="checkbox" name="change-theme" id="change-theme" class="cabecalho__input">
+            <label for="change-theme" class="cabecalho__label">
+                <i class="bi bi-sun cabecalho__icone"></i>
+                <i class="bi bi-moon cabecalho__icone"></i>
+            </label>
+        </section>
+    </header>
+    <main class="principal">
+        <section class="principal-secao">
+            <article class="principal__artigo principal__artigo--imagem">
+                <span class="principal__span">nike</span>
+                <img src="assets/img/tenis.png" alt="tênis novo lançamento da nike" class="principal__imagem">
+            </article>
+            <article class="principal__artigo">
+                <h1 class="principal__titulo-principal">tênis nike</h1>
+                <p class="principal__paragrafo principal__paragrafo--maiuscula">excelente para corridas</p>
+                <p class="principal__paragrafo principal__paragrafo--espacamento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptas quisquam consequatur impedit, optio assumenda sunt error voluptates iusto? Modi quibusdam veritatis voluptate vel explicabo aut debitis odio odit atque.</p>
+                <div class="div-preco">
+                    <span class="div-preco__span">R$299,99</span>
+                    <button class="div-preco__button">Comprar
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.div-preco__button{
+    background-color: var(--cinza-escuro);
+    border-radius: 3rem;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 1rem;
+    height: 3rem;
+    width: 7rem;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.div-preco__button:hover{
+    background-color: var(--dark-mode);
+}

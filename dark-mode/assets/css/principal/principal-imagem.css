@@ -1,0 +1,7 @@
+.principal__imagem{
+    position: absolute;
+    right: -1rem;
+    top: 10rem;
+    transform: rotate(-25deg);
+    width: 130%;
+}

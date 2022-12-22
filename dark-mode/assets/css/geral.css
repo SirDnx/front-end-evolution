@@ -1,0 +1,22 @@
+:root{
+    --branco: #fff;
+    --cinza-claro: #eceff1;
+    --cinza-claro2: #eff7fc;
+    --cinza-escuro: #444;
+    --dark-mode: #263238;
+    --dark-mode2: #37474f;
+    --dark-mode3: #273035;
+    --dark-mode-descricao: #67b4f3;
+    --dark-mode-descricao2: #2196f3;
+    --preto: #000;
+}
+
+*{
+    box-sizing: border-box;
+    border: none;
+    font-family: Helvetica, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}

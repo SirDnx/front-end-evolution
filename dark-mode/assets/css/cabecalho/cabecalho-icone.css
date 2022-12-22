@@ -1,0 +1,8 @@
+.cabecalho__icone{
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.bi-moon{
+    display: none;
+}
