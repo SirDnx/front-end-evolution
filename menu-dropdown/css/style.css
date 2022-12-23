@@ -1,0 +1,77 @@
+:root{
+    --bg: rgb(35, 65, 104);
+    --hover: rgb(46, 89, 146);
+    --link: #fff;
+    --bg-link: rgb(25, 44, 70);
+    --fonte: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte);
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.cabecalho{
+    background-color: var(--bg);
+}
+
+.cabecalho__nav{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__titulo{
+    font-size: 2rem;
+    color: white;
+}
+
+.cabecalho__lista{
+}
+
+.cabecalho__item{
+    display: inline-block;
+    position: relative;
+}
+
+.cabecalho__link{
+    text-transform: capitalize;
+    color: var(--link);
+    background-color: var(--bg-link);
+    margin-left: .1rem;
+    padding: .5rem;
+    transition: .3s;
+    border-radius: 5px;
+
+}
+
+.cabecalho__link:hover{
+    background-color: var(--hover);
+}
+
+.cabecalho__sub-menu{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100px;
+    background-color: var(--bg-link);
+    transition: 1s all ease-in-out;
+}
+
+.cabecalho__item:hover ul{
+    display: block;
+}
+
+.cabecalho__sub-item{
+    width: 100%;
+}
+
+.cabecalho__sub-link{
+    display: block;
+}
