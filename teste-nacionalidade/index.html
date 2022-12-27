@@ -4,20 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nacionalidade</title>
+    <script src="main.js" type="text/javascript" defer></script>
 </head>
 <body>
     <label for="txtnacionalidade">Verificar nacionalidade: </label>
     <input type="text" name="txtnacionalidade" id="txt0">
-    <input type="button" value="Verificar" onclick="Checar()">
+    <input type="button" value="Verificar" id="entrada">
     <div id="resulnacio">
-        <p>nacionalidade</p>
     </div>
-    <script>
-        function Checar(){
-            var nacio = window.document.getElementById('txt0')
-            var resul = window.document.getElementById('resulnacio')
-            resul.innerText = 'Sua nacionalidade é' + nacio
-        }
-    </script>
 </body>
 </html>
