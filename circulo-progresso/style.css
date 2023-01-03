@@ -1,0 +1,99 @@
+*{
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgba(128, 0, 128, 0.45);
+}
+
+.container{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.container__input{
+    border: 1px solid #cdcdcd;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+.container__input::placeholder{
+    color: #000000;
+}
+
+.container__button{
+    padding: .5rem 1rem;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    background-color: rgba(128, 0, 128, 0.7);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.container__button:hover{
+    background-color: rgba(128, 0, 128, 0.9);
+    transform: scale(1.03);
+    color: #ffffff;
+}
+
+.box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+svg{
+    width: 150px;
+    height: 150px;
+}
+
+circle{
+    fill: none;
+    stroke: #000000;
+    stroke-width: 10;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #cdcdcd;
+}
+
+circle:nth-child(2){
+    stroke: dodgerblue;
+    transition: stroke-dashoffset .8s;
+}
+
+.number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.number h1{
+    font-size: 1rem;
+}
