@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.header__logo{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__item{
+    margin-left: 20px;
+}
+
+.header__link{
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    text-transform: capitalize;
+    transition: .3s ease;
+}
+
+.header__link:hover, .header__link.active{
+    background: #ffffff;
+    color: #2b1055;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+.section__images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.section__images#moon{
+    mix-blend-mode: screen;
+}
+
+.section__images#mountains_front{
+    z-index: 10;
+}
+
+.title{
+    position: absolute;
+    color: #ffffff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    right: -350px;
+}
+
+.section__button{
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: .3s ease;
+}
+
+.section__button:hover{
+    background-color: #2b1055;
+    color: #fff;
+}
+
+.info--content{
+    position: relative;
+    padding: 100px;
+    background-color: #1c0522;
+}
+
+.info--content__titulo{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.info--content__paragrafo{
+    text-indent: 5rem;
+    font-size: 1em;
+    color: #fff;
+}
