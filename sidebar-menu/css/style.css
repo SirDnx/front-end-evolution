@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.navigation{
+    bottom: 20px;
+    box-sizing: initial;
+    border-radius: 10px;
+    border-left: 5px solid #4d5bf9;
+    background-color: #4d5bf9;
+    left: 20px;
+    overflow-x: hidden;
+    position: fixed;
+    top: 20px;
+    transition: width .5s;
+    width: 70px;
+}
+
+.navigation.active{
+    width: 300px;
+}
+
+.navigation__list{
+    left: 0;
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 40px;
+    top: 0;
+    width: 100%;
+}
+
+b:nth-child(1){
+    background-color: #fff;
+    display: none;
+    height: 20px;
+    position: absolute;
+    top:  -20px;
+    width: 100%;
+}
+
+b:nth-child(1)::before{
+    background-color: #4d5bf9;
+    border-bottom-right-radius: 20px;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+b:nth-child(2){
+    background-color: #fff;
+    bottom:  -20px;
+    display: none;
+    height: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+b:nth-child(2)::before{
+    background-color: #4d5bf9;
+    border-top-right-radius: 20px;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+li.active b:nth-child(1), li.active b:nth-child(2){
+    display: block;
+}
+
+.list{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    min-width: 100%;
+    position: relative;
+}
+
+.list.active{
+    background-color: #fff;
+}
+
+.link{
+    color: #fff;
+    display: block;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.list.active .link{
+    color: #333;
+}
+
+.icon{
+    display: block;
+    height: 60px;
+    line-height: 70px;
+    min-width: 60px;
+    position: relative;
+    text-align: center;
+}
+
+ion-icon{
+    font-size: 1.5em;
+}
+
+.title{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+.toggle{
+    align-items: center;
+    border-radius: 10px;
+    background-color: #4d5bf9;
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    transition: .3s ease;
+    width: 50px;
+}
+
+.toggle.active{
+    background-color: red;
+}
+
+.toggle ion-icon{
+    color: #fff;
+    display: none;
+    font-size: 2.1rem;
+    position: absolute;
+}
+
+ion-icon.open, .toggle.active ion-icon.close{
+    display: block;
+}
+
+.toggle.active ion-icon.open, ion-icon.close{
+    display: none;
+}
