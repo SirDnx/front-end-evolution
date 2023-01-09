@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação - Input</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="box__input">
+            <input class="box__password" type="password" id="passwordInput" placeholder="Senha" onkeyup="checkPassword(this.value)"></input>
+            <span class="box__toggle" id="toggleBtn"><ion-icon class="box__icon" id="icon" name="eye-outline"></ion-icon></span>
+        </div>
+        <div id="validationField" class="validation">
+            <ul class="validation__list">
+                <li class="validation__items" id="lower"><ion-icon class="validation__icon" name="stop-circle-outline"></ion-icon>Pelo menos um caractere minúsculo</li>
+                <li class="validation__items" id="upper"><ion-icon class="validation__icon" name="stop-circle-outline"></ion-icon>Pelo menos um caractere maiúsculo</li>
+                <li class="validation__items" id="number"><ion-icon class="validation__icon" name="stop-circle-outline"></ion-icon>Pelo menos um número</li>
+                <li class="validation__items" id="special"><ion-icon class="validation__icon" name="stop-circle-outline"></ion-icon>Pelo menos um caractere especial</li>
+                <li class="validation__items" id="length"><ion-icon class="validation__icon" name="stop-circle-outline"></ion-icon>Pelo menos oito caracteres</li>
+            </ul>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
