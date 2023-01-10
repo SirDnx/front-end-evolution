@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Card - menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card__content">
+            <div class="card__img">
+                <img class="img" src="img/user.jpg" alt="">
+            </div>
+            <h2 class="card__texto">Daniel Moraes<br><span>Front-End Developer</span></h2>
+        </div>
+        <ul class="card__navigation">
+            <li class="card__item">
+                <a class="card__link" href="#">
+                <ion-icon name="person-outline"></ion-icon>
+                editar perfil</a>
+            </li>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                <ion-icon name="chatbox-outline"></ion-icon>
+                caixa de entrada</a>
+            </li>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                <ion-icon name="settings-outline"></ion-icon>
+                configurações</a>
+            </li>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                <ion-icon name="help-circle-outline"></ion-icon>
+                suporte</a>
+            </li>
+            <li class="card__item">
+                <a class="card__link" href="#">
+                <ion-icon name="log-out-outline"></ion-icon>
+                sair</a>
+            </li>
+        </ul>
+        <div class="toggle">
+            <ion-icon name="caret-down-outline"></ion-icon>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
