@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.container{
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    display: flex;
+}
+
+span{
+    position: absolute;
+    width: 40px;
+    height: 200px;
+    background-color: #d81f26;
+}
+
+span:nth-child(1){
+    right: 0;
+}
+
+span:nth-child(2){
+    left: 40px;
+    transform: skewX(22deg);
+    z-index: 1;
+    box-shadow: 0 0 14px rgba(0,0,0,.4);
+}
