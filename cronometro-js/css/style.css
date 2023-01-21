@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.85);
+}
+
+.time{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    transition: all ease;
+}
+
+.start--button, .pause--button, .stop--button{
+    padding: .6rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease;
+    color: #fff;
+}
+
+.start--button{
+    background-color: green;
+}
+
+.pause--button{
+    background-color: #808080;
+}
+
+.stop--button{
+    background-color: red;
+}
+
+.start--button:hover{
+    background-color: rgb(0, 87, 0);
+}
+
+.pause--button:hover{
+    background-color: #494949;
+}
+
+.stop--button:hover{
+    background-color: rgb(143, 0, 0);
+}
