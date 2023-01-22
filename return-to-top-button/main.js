@@ -1,10 +1,10 @@
-const botao = document.querySelector("#btntopo");
+const button = document.querySelector("#btntop");
 
-botao.addEventListener("click", function(){
+button.addEventListener("click", function(){
     window.scrollTo(0,0);
 });
 
 window.addEventListener("scroll", function(){
-    let scroll = botao;
+    let scroll = button;
     scroll.classList.toggle("active", window.scrollY > 450)
 });
