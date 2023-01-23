@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switch Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form class="login--form" id="form">
+        <h1 id="title" class="form__title">Login</h1>
+        <div class="form__input--box">
+            <input name="user" class="form__input" type="text" placeholder="Username">
+            <input name="password" class="form__input" type="password" placeholder="Password">
+            <input class="form__input" type="submit" value="Enter" id="btnEnter">
+        </div>
+        <div class="links--group">
+            <a class="group__link" href="#">Forget Password</a>
+            <a class="group__link" href="#">Sign Up</a>
+        </div>
+    </form>
+    <div class="colors">
+        <span data-button="#f0f" class="active" style="--color:#f0f;"></span>
+        <span data-button="#ff6b6b" style="--color:#ff6b6b;"></span>
+        <span data-button="#1dd1a1" style="--color:#1dd1a1;"></span>
+        <span data-button="#2e86de" style="--color:#2e86de;"></span>
+        <span data-button="#ff9f43" style="--color:#ff9f43;"></span>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
