@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url(../img/bg-home.jpg) no-repeat center / cover;
+    min-height: 100%;
+    width: 100%;
+}
+
+.link{
+    color: #000000;
+}
+
+.facebook:hover{
+    color: #395593;
+}
+
+.twitter:hover{
+    color: #1c97e3;
+}
+
+.instagram:hover{
+    color: #ce2462;
+}
+
+.phone{
+    text-decoration: none;
+}
+
+.phone:hover{
+    text-decoration: underline;
+    color: #FF004D;
+}
+
+.bg-pink{
+    background-color: #FF004D;
+}
+
+.color-pink{
+    color: #FF004D;
+}
+
+.nav-link{
+    color: #000;
+    transition: .3s;
+    padding: 0;
+}
+
+.nav-link:hover, .nav-item.active .nav-link{
+    color: #FF004D;
+    border-bottom: 1px solid #FF004D;
+}
+
+.cart-icon{
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    min-height: 30px;
+    min-width: 30px;
+    cursor: pointer;
+}
+
+.cart-icon:hover{
+    scale: 1.1;
+}
+
+.order-now-link{
+    transition: .3s ease;
+    padding: .5rem 1.2rem;
+}
+
+.order-now-link:hover{
+    color: #fff;
+    background-color: #FF004D;
+}
