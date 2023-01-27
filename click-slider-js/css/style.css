@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+main{
+    background-color: #eeeeee;
+}
+
+.info--section{
+    width: 400px;
+}
+
+.review--title{
+    padding-bottom: .5rem;
+    position: relative;
+}
+
+.review--title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 3px;
+    width: 100px;
+    background-color: blue;
+}
+
+.author--info{
+    background-color: #e0dfdf;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.div--img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+button{
+    background-color: transparent;
+    font-size: 1.5rem;
+}
