@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../img/hero.jpeg) no-repeat center / cover;
+}
+
+header{
+    width: 400px;
+    background-color: #f3f3f3;
+}
+
+h2 + button{
+    width: 30px;
+    height: 30px;
+}
+
+.over--screen{
+    display: none;
+}
